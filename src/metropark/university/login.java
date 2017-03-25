@@ -212,7 +212,7 @@ public class login extends javax.swing.JFrame {
             if (rs.next()) {
 
                 JOptionPane.showMessageDialog(null, "Access Granted !");
-
+                this.dispose();
                 mainmenu mm = new mainmenu();
                 mm.setVisible(true);
                 txtUsername.setText("");
