@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 15, 2017 at 05:18 AM
+-- Generation Time: Mar 25, 2017 at 02:24 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -41,7 +41,7 @@ CREATE TABLE `bscinformationsystems` (
 --
 
 INSERT INTO `bscinformationsystems` (`studentNo`, `accounting`, `computersecurity`, `communicationskills`, `mathematics`, `sdp01`, `webdesigning`) VALUES
-('01', 55, 60, 78, 78, 78, 54);
+('01', 55, 60, 78, 78, 58, 54);
 
 -- --------------------------------------------------------
 
@@ -58,6 +58,13 @@ CREATE TABLE `bscsoftwareengineering` (
   `wd` int(3) NOT NULL,
   `cf` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `bscsoftwareengineering`
+--
+
+INSERT INTO `bscsoftwareengineering` (`studentNo`, `sdp1`, `db`, `mathematics`, `oop1`, `wd`, `cf`) VALUES
+('02', 50, 33, 44, 22, 66, 55);
 
 -- --------------------------------------------------------
 
@@ -152,7 +159,8 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`studentNo`, `FirstName`, `LastName`, `Birthday`, `MobileNo`, `Sex`, `Address`, `Course`) VALUES
-('01', 'Naveen', 'Vass', '17.08.1994', '0745659874', 'Male', '14/85 Start Street, Wellawatta', 'Bsc. Information Systems');
+('01', 'Naveen', 'Vass', '17.08.1995', '0745659874', 'Male', '14/85 Start Street, Wellawatta', 'Bsc. Information Systems'),
+('02', 'Omas', 'Dias', '17.08.1989', '0768038846', 'Male', '16/8, Kandy Rd, Colombo', 'BSc. Software Engineering');
 
 -- --------------------------------------------------------
 

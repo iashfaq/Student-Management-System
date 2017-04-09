@@ -453,7 +453,7 @@ public class StudentDetails extends javax.swing.JFrame {
                 comCourse.setSelectedItem(course);
                 comCourse.disable();
                 txtAddress.setText(address);
-
+                conn.close();
                 //    System.out.println(fetch.getInt("studentNo") + " " + fetch.getString("studentFirstName") + " " + fetch.getString("studentLastName"));
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Student Number !");

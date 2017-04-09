@@ -217,7 +217,7 @@ public class login extends javax.swing.JFrame {
                 mm.setVisible(true);
                 txtUsername.setText("");
                 txtPassword.setText("");
-
+                con.close();
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Username, Password !");
                 txtUsername.setText("");
